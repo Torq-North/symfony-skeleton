@@ -83,7 +83,7 @@ services:
       - "${FRONTEND_PORT_EXTERNAL}:5173"
 
   azure:
-    image: ghcr.io/torqit/symfony-azure-provisioning:0
+    image: ghcr.io/torq-north/symfony-azure-provisioning:0
     profiles: [azure]
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock

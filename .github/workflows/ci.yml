@@ -10,7 +10,7 @@ concurrency:
 
 jobs:
   CI:
-    uses: TorqIT/symfony-github-actions-workflows/.github/workflows/ci-docker.yml@v0
+    uses: Torq-North/symfony-github-actions-workflows/.github/workflows/ci-docker.yml@v0
     permissions:
       contents: read
       actions: read

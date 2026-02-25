@@ -11,7 +11,7 @@ concurrency:
 
 jobs:
   CD:
-    uses: TorqIT/symfony-github-actions-workflows/.github/workflows/cd-azure-container-apps.yml@v0
+    uses: Torq-North/symfony-github-actions-workflows/.github/workflows/cd-azure-container-apps.yml@v0
     permissions:
       actions: read
       contents: read
