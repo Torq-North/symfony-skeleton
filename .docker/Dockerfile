@@ -27,8 +27,8 @@ COPY --chown=www-data:www-data public/ /var/www/html/public/
 COPY --chown=www-data:www-data src/ /var/www/html/src/
 COPY --chown=www-data:www-data templates/ /var/www/html/templates/
 RUN set -eux; \
-    COMPOSER_NO_DEV=1 php /usr/local/bin/composer install; \
-    bin/console cache:warmup
+    APP_ENV=prod COMPOSER_NO_DEV=1 php /usr/local/bin/composer install; \
+    APP_ENV=prod bin/console cache:warmup
 
 FROM base AS init
 COPY /.docker/init/init.sh /init.sh
