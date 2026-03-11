@@ -6,6 +6,11 @@
 parameters:
   env(DATABASE_URL): ''
   env(DEFAULT_URI): ''
+  env(DATABASE_PORT): '0'
+  env(DATABASE_HOST): ''
+  env(DATABASE_NAME): ''
+  env(DATABASE_USER): ''
+  env(DATABASE_PASSWORD): ''
 
 services:
     # default configuration for services in *this* file
